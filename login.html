@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+  <title>Amazon Foods</title>
+  <meta charset="utf-8" />
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="logic.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<style>
+
+  .live-search-list {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  background-color: #2c3e50;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  }
+
+  .live-search-box {
+  width: 100%;
+  display: block;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #3498db;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  }
+
+  .live-search-list li {
+  color: fff;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+  }
+
+  .des {
+  color: fff;
+  list-style: none;
+  padding-top: 200px;
+  padding-left: 300px;
+  margin: 5px 0;
+  font-size:20px;
+  }
+
+
+	.product-name a p {display:none;}
+.product-name a:hover p {display:block;}
+
+</style>
+      
+          <script>
+      function login(){
+        var xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.onreadystatechange = function(){
+          var fn = document.forms[0].firstName.value;
+          var ln = document.forms[0].lastName.value;
+
+          if(this.readyState == 4 &&  this.status == 200){
+            var names = JSON.parse(this.responseText);
+
+            for(var i = 0;i<names.length;i++){
+              if(names[i].firstName==fn && names[i].lastName==ln){
+
+                localStorage.setItem("firstName",fn);
+                localStorage.setItem("lastName",ln);
+                window.location = "index.php";
+                return;
+              }
+            }
+
+            alert("Incorrect");
+          }
+        };
+
+        xmlhttp.open("GET","Gruntfile.js",true);
+        xmlhttp.send();
+
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+      
+        	<header id="masthead">
+  		<h1>Amazon Foods<span class="tagline">
+  			<a>
+  			  <img src="amazon.jpg" alt="Paris" style="width:150px" align="right">
+  			</a>
+  		</h1>
+  		<h2> <font size="2">  Fresh foods delivered in one hour!
+                    <br /> Please enter username and password to login to your account </font>
+                </h2>
+  	</header>
+      
+    <form action="login.html" method="get" onsubmit="return login();">
+      UserName: <input type="text" name="firstName"> <br>
+      <br>
+      Password: <input type="password" name="lastName"> <br>
+      <br>
+      <input type="submit">
+    </form>
+      
+      
+      
+      
+  </body>
+</html>
