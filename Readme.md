@@ -1,4 +1,5 @@
-Simple Shopping Cart with PHP
+Simple Shopping Cart with PHP Georgia State University, Atlanta, USA
+https://csds.gsu.edu/
 ============================
 1. Import "mysql_import.sql" in your MySql PhpMyAdmin to create product table.
 2. Change settings in "config.php" for database.
