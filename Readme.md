@@ -8,3 +8,4 @@ https://csds.gsu.edu/
 @License : http://opensource.org/licenses/MIT
 @Tutorial : http://www.sanwebe.com/2013/06/creating-simple-shopping-cart-with-php
 https://csds.gsu.edu/
+Cascading Style Sheets (CSS), JavaScript, Structured Query Language (SQL) database, Hypertext Preprocessor (PHP) application.
