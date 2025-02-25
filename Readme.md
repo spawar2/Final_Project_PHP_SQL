@@ -9,5 +9,5 @@ https://csds.gsu.edu/
 @Tutorial : http://www.sanwebe.com/2013/06/creating-simple-shopping-cart-with-php
 https://csds.gsu.edu/
 Cascading Style Sheets (CSS), JavaScript, Structured Query Language (SQL) database, Hypertext Preprocessor (PHP) application.
-selected function(ObjectProperty, reset, login, loginBtn, createBtn, analysis, logOut, invalidLogin, invalidForm, cv2.VideoCapture, imwrite, imread, str, imshow, load, get_user, validate, add_user).
+selected function(ObjectProperty, reset, login, loginBtn, createBtn, analysis, logOut, invalidLogin, invalidForm, cv2.VideoCapture, imwrite, imread, str, imshow, load, get_user, validate, add_user). ^^^Georgia State University, College of Arts and Sciences, Department of Computer Science and Biology, Atlanta, United States of America (USA). 
 ![download2](https://github.com/user-attachments/assets/676b7e9c-edd1-4866-93f4-9d631c09566b)
